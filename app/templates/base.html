@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../static/css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700italic' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		body{
+			background: #f1f1f1;
+			color:#202020;
+			font-family: 'Ubuntu', sans-serif;
+		}
+		h2 small{
+			color: #727272;
+			font-family: 'Ubuntu', sans-serif;
+			font-style: italic;
+		}
+	</style>
+	<title>
+		{% if title %}
+			{{title}}
+		{% else %}
+			CMS - IS2
+		{% endif %}
+	</title>
+</head>
+<body>
+	{% block content %}
+	{% endblock %}
+	<footer>
+		{% block footer %}
+		{% endblock %}
+		CMS UCSP©
+	</footer>
+</body>
+</html>

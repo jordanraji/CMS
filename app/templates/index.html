@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+	<h1>Bienvenido al CMS</h1> 
+	<h2>Hola, <small> ingresaste a esta hora: 
+	{% if hour %}
+		{{ hour }}
+	{% else %}
+		Ha ocurrido un error.
+	{% endif %}
+</small>
+	</h2>
+{% endblock %}
+{% block footer %}
+{% endblock %}
